@@ -3,202 +3,247 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato&family=Open+Sans:wght@400&family=Montserrat:wght@300&family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Justin Khor</title>
   </head>
 
-  <body>
-
-    <div class="max-w-4xl mx-auto divide-y divide-gray-400">
-      <div class="py-2">
-        <h1 class="text-6xl font-bold mt-8 mb-5">
-          Resume
-        </h1>
-
-        <p class="my-5">
-          <img src="profile.jpg" width="250px" height="250px" alt="pic"></img>
-        </p>
-
-        <div class="my-5">
-          <strong class="text-3xl">JUSTIN KHOR</strong><br><br>
-          <strong class="text-xl mt-1">EMAIL: </strong><em class="text-xl mt-1 text-blue-700 hover:text-blue-800">khorchengee@gmail.com</em><br>
-          <strong class="text-xl mt-1">LINKEDIN: </strong><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="https://www.linkedin.com/in/justin-khor-386264157/">https://www.linkedin.com/in/justin-khor-386264157</a></em><br>
-          <strong class="text-xl mt-1">GITHUB: </strong><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="https://github.com/Justinkhor">https://github.com/Justinkhor</a></em><br>
-          <!-- <strong class="text-xl mt-1">GITCONNECTED: </strong><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="https://gitconnected.com/justinkhor">https://gitconnected.com/justinkhor</a></em><br> -->
-        </div>
-      </div>
-
-      <div class="py-2">
-        <h2 class="text-5xl font-bold mt-5">Education</h2>
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">Bachelor of Computer Science in Data Science</strong><br>
-          <em class="text-xl mt-1">Monash University Malaysia (2019 - PRESENT)</em><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-            <li>CGPA: 3.92</li>
-            <li>WAM (Weighted Average Marks): 83.88</li>
-            <li>Participated in Monash Hackathon 2019</li>
-            <li>Participated in Shopee Code League 2020</li>
-          </ul>
+  <body style="background-color:#e8eddf;">
+    <div class="flex flex-col h-screen">
+      <header class="flex flex-wrap items-center justify-between px-12 h-32 -mb-32 relative" style="font-family:Quicksand">
+        <div class="w-full flex justify-center">
+          <ul>
+            <li class="ml-10 mr-10 hidden md:inline">
+              <a href="#education" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-2xl text-black uppercase">Education</a>
+            </li>
+            <li class="ml-10 mr-10 hidden md:inline">
+              <a href="#skills" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-2xl text-black uppercase">Skills</a>
+            </li>
+            <li class="ml-10 mr-10 hidden md:inline">
+              <a href="" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-5xl text-black uppercase">JK</a>
+    				</li>
+            <li class="ml-10 mr-10 hidden md:inline">
+              <a href="#experiences" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-2xl text-black uppercase">Experiences</a>
+            </li>
+            <li class="ml-10 mr-10 hidden md:inline">
+              <a href="#projects" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-2xl text-black uppercase">Projects</a>
+            </li>
+    			</ul>
         </div>
 
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">Cambridge A-Levels</strong><br>
-          <em class="text-xl mt-1">Methodist College Kuala Lumpur (2017 - 2018)</em><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-            <li>CGPA: 3.83</li>
-            <li>Mathematics(A), Physics(B), Economics(B)</li>
-          </ul>
+      <!-- <div class="p-8 container mx-auto flex flex-wrap items-center justify-between">
+
+        <ul class="justify-center md:justify-end flex-1 flex list-reset">
+          <li>
+            <a href="#edu" class="text-sm text-grey-800 no-underline hover:text-black">Education</a>
+          </li>
+          <li class="ml-6">
+            <a href="#skills" class="text-sm text-grey-800 no-underline hover:text-black">Skills</a>
+          </li>
+          <li class="ml-6">
+            <a href="#exp" class="text-sm text-grey-800 no-underline hover:text-black">Experiences</a>
+          </li>
+          <li class="ml-6">
+            <a href="#pro" class="text-sm text-grey-800 no-underline hover:text-black">Projects</a>
+          </li>
+          <li class="ml-6">
+            <a href="/contact" class="text-sm bg-purple-400 py-3 px-6">Contact</a>
+          </li>
+        </ul>
+      </div> -->
+
+      </header>
+      <div class="flex-1 overflow-y-auto max-w-4xl mx-auto divide-y divide-gray-400 mt-32" style="font-family:Lato;">
+        <div class="py-2">
+          <!-- <h1 class="text-6xl font-bold mt-8 mb-5" style="font-family:Karla;">
+            RESUME
+          </h1> -->
+
+          <p class="my-5">
+            <img src="profile.jpg" width="300px" height="300px" alt="pic"></img>
+          </p>
+
+          <div class="my-5">
+            <strong class="text-4xl">JUSTIN KHOR CHENG EE</strong><br><br>
+            <strong class="text-xl mt-1">PHONE: </strong><small class="text-xl mt-1 text-blue-800 hover:text-blue-900">+60162647375</small><br>
+            <strong class="text-xl mt-1">EMAIL: </strong><small class="text-xl mt-1 text-blue-800 hover:text-blue-900">khorchengee@gmail.com</small><br>
+            <strong class="text-xl mt-1">LINKEDIN: </strong><small><a class="text-xl mt-1 text-blue-800 hover:text-blue-900" href="https://www.linkedin.com/in/justin-khor-386264157/">https://www.linkedin.com/in/justin-khor-386264157</a></small><br>
+            <strong class="text-xl mt-1">GITHUB: </strong><small><a class="text-xl mt-1 text-blue-800 hover:text-blue-900" href="https://github.com/Justinkhor">https://github.com/Justinkhor</a></small><br>
+          </div>
         </div>
 
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">Full Stack Web Development Bootcamp</strong><br>
-          <em class="text-xl mt-1">Next Academy Kuala Lumpur (2017)</em><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-              <li>Graduated as Full Stack Web Developer</li>
-              <li><a class="text-blue-700 hover:text-blue-800" href="http://s3-ap-southeast-1.amazonaws.com/next-academy-site/uploads/certificates/khor-cheng-ee-5da9b2d8-3cdf-463e-9d6c-8ceada82cdbb/54cb8d0beb.">Certificate</a></li>
-          </ul>
+        <div class="py-2" id="education">
+          <h2 class="text-5xl font-bold mt-5">Education</h2>
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">Bachelor of Computer Science in Data Science</strong><br>
+            <em class="text-xl mt-1">Monash University Malaysia (2019 - PRESENT)</em><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+              <li>CGPA: 3.92</li>
+              <li>WAM (Weighted Average Marks): 83.88</li>
+              <li>Participated in Monash Hackathon 2019</li>
+              <li>Participated in Shopee Code League 2020</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">Cambridge A-Levels</strong><br>
+            <em class="text-xl mt-1">Methodist College Kuala Lumpur (2017 - 2018)</em><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+              <li>CGPA: 3.83</li>
+              <li>Mathematics(A), Physics(B), Economics(B)</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">Full Stack Web Development Bootcamp</strong><br>
+            <em class="text-xl mt-1">Next Academy Kuala Lumpur (2017)</em><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+                <li>Graduated as Full Stack Web Developer</li>
+                <li><a class="text-blue-800 hover:text-blue-900" href="http://s3-ap-southeast-1.amazonaws.com/next-academy-site/uploads/certificates/khor-cheng-ee-5da9b2d8-3cdf-463e-9d6c-8ceada82cdbb/54cb8d0beb.">Certificate</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">Sijil Pelajaran Malaysia (SPM)</strong><br>
+            <em class="text-xl mt-1">Methodist Boys’ Secondary School Kuala Lumpur (2012 - 2016)</em><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+                <li>9A 1B</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">Sijil Pelajaran Malaysia (SPM)</strong><br>
-          <em class="text-xl mt-1">Methodist Boys’ Secondary School Kuala Lumpur (2012 - 2016)</em><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-              <li>9A 1B</li>
-          </ul>
-        </div>
-      </div>
+        <div class="py-2" id="skills">
+          <h2 class="text-5xl font-bold mt-5 mb-10">Skills</h2>
+          <div class="mt-2 mb-3">
+            <strong class="text-3xl">Programming Languages</strong><br>
+            <p class="text-xl mt-1">Python, Ruby, Java, R</p><br>
+          </div>
 
-      <div class="py-2">
-        <h2 class="text-5xl font-bold mt-5 mb-10">Skills</h2>
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Programming Languages</strong><br>
-          <p class="text-xl mt-1">Python, Ruby, Java, R</p><br>
-        </div>
+          <div class="mt-2 mb-3">
+            <strong class="text-3xl">Full-Stack Web Development</strong><br>
+            <p class="text-xl mt-1">Python Django, Ruby on Rails</p><br>
+          </div>
 
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Full-Stack Web Development</strong><br>
-          <p class="text-xl mt-1">Python Django, Ruby on Rails</p><br>
-        </div>
+          <div class="mt-2 mb-3">
+            <strong class="text-3xl">Web Front-End</strong><br>
+            <p class="text-xl mt-1">HTML, CSS, BootstrapCSS, TailwindCSS, React.js, JQuery, JavaScript</p><br>
+          </div>
 
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Web Front-End</strong><br>
-          <p class="text-xl mt-1">HTML, CSS, BootstrapCSS, TailwindCSS, React.js, JQuery, JavaScript</p><br>
-        </div>
+          <div class="mt-2 mb-3">
+            <strong class="text-3xl">Web Automation</strong><br>
+            <p class="text-xl mt-1">Selenium</p><br>
+          </div>
 
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Web Automation</strong><br>
-          <p class="text-xl mt-1">Selenium</p><br>
-        </div>
+          <div class="mt-2 mb-3">
+            <strong class="text-3xl">Database Technologies</strong><br>
+            <p class="text-xl mt-1">SQLite3, MySQL</p><br>
+          </div>
 
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Database Technologies</strong><br>
-          <p class="text-xl mt-1">SQLite3, MySQL</p><br>
+          <div class="mt-2 mb-3">
+            <strong class="text-3xl">Mobile Programming</strong><br>
+            <p class="text-xl mt-1">Android Studio, Flutter</p><br>
+          </div>
+
         </div>
 
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Mobile Programming</strong><br>
-          <p class="text-xl mt-1">Android Studio, Flutter</p><br>
+        <div class="py-2" id="experiences">
+          <h2 class="text-5xl font-bold mt-5">Experiences</h2>
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">Google Developer Student Club Monash University Malaysia</strong><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+              <li>Co-Tech Lead (Core Team) for Web Development in 2019</li>
+              <li>Pioneer Team of the club</li>
+              <li>Quest Facilitator for Google Cloud Study Jam 2019</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">MCKL Christian Fellowship</strong><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+              <li>Vice Secretary in 2018</li>
+              <li>PA Department Head in 2017</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">MCKL Korean Cultural Club</strong><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+                <li>Vice President in 2018</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">1st Kuala Lumpur Boys’ Brigade</strong><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+                <li>Joined since 2012</li>
+                <li>Achieved the rank of a Lance Corporal</li>
+                <li>National Concert Band Champion in 21st Boys’ Brigade Pesta and Convention in 2014</li>
+                <li>Boys’ Brigade Concert Band Festival 2013 Gold Medalist</li>
+                <li>Organized various camps and performed at various events including a Band Concert in Bangkok, Thailand</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">MBSSKL Scrabble Club</strong><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+                <li>Pioneer member of the club</li>
+                <li>President in 2016</li>
+                <li>Vice President in 2015</li>
+                <li>Represented Malaysia in the 10th WESPA-UWA World Youth Scrabble Championship in Perth, Australia in 2015</li>
+                <li>Participated in ASTAR SCRABBLE CHALLENGE INTERNATIONAL for three consecutive years with best ranking of 11th place</li>
+                <li>Participated in various national Scrabble competitions with best ranking of 2nd Runner Up</li>
+                <li>Organized the 1st MBSSKL Scrabble Open in 2016 during my stint as the President</li>
+            </ul>
+          </div>
+
+          <div class="mt-10 mb-3">
+            <strong class="text-3xl">MBSSKL Leaderonomics Club</strong><br>
+            <ul class="text-xl mt-1 list-disc list-inside pl-5">
+                <li>Represented the club to join a coding program (HTML, CSS and JavaScript) and build a simple website</li>
+                <li>The outcome was presented to the then President of USA, Barack Obama during the opening of The Malaysian Global Innovation and Creativity Centre (MaGIC) Cyberjaya in 2014 </li>
+            </ul>
+          </div>
+
         </div>
 
-      </div>
+        <div class="py-2" id="projects">
+          <h2 class="text-5xl font-bold mt-5 mb-10">Projects</h2>
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="http://randomnamepicker.pythonanywhere.com/">Random Name Picker</a></strong><br>
+            <p class="text-xl mt-1">Python Django</p><br>
+          </div>
 
-      <div class="py-2">
-        <h2 class="text-5xl font-bold mt-5">Experiences</h2>
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">Google Developer Student Club Monash University Malaysia</strong><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-            <li>Co-Tech Lead (Core Team) for Web Development in 2019</li>
-            <li>Pioneer Team of the club</li>
-            <li>Quest Facilitator for Google Cloud Study Jam 2019</li>
-          </ul>
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="http://justinkhor.pythonanywhere.com/">Blog</a></strong><br>
+            <p class="text-xl mt-1">Python Django</p><br>
+          </div>
+
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="https://my-airbnb-clone.herokuapp.com/">AirBnb Clone</a></strong><br>
+            <p class="text-xl mt-1">Ruby on Rails</p><br>
+          </div>
+
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="http://justin-quora-clone.herokuapp.com/">Quora Clone</a></strong><br>
+            <p class="text-xl mt-1">Ruby on Rails</p><br>
+          </div>
+
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="https://sh0rt-ly.herokuapp.com/">Bitly Clone</a></strong><br>
+            <p class="text-xl mt-1">Ruby on Rails</p><br>
+          </div>
+
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="https://liveauctionhouse.herokuapp.com/">Auction House</a></strong><br>
+            <p class="text-xl mt-1">Ruby on Rails</p><br>
+          </div>
+
+          <div class="mt-2 mb-3">
+            <strong><a class="text-3xl mt-1 hover:text-blue-800" href="https://liveauctionhouse.herokuapp.com/">DeadStock</a></strong><br>
+            <p class="text-xl mt-1">Ruby on Rails</p><br>
+          </div>
+
         </div>
-
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">MCKL Christian Fellowship</strong><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-            <li>Vice Secretary in 2018</li>
-            <li>PA Department Head in 2017</li>
-          </ul>
-        </div>
-
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">MCKL Korean Cultural Club</strong><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-              <li>Vice President in 2018</li>
-          </ul>
-        </div>
-
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">1st Kuala Lumpur Boys’ Brigade</strong><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-              <li>Joined since 2012</li>
-              <li>Achieved the rank of a Lance Corporal</li>
-              <li>National Concert Band Champion in 21st Boys’ Brigade Pesta and Convention in 2014</li>
-              <li>Boys’ Brigade Concert Band Festival 2013 Gold Medalist</li>
-              <li>Organized various camps and performed at various events including a Band Concert in Bangkok, Thailand</li>
-          </ul>
-        </div>
-
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">MBSSKL Scrabble Club</strong><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-              <li>Pioneer member of the club</li>
-              <li>President in 2016</li>
-              <li>Vice President in 2015</li>
-              <li>Represented Malaysia in the 10th WESPA-UWA World Youth Scrabble Championship in Perth, Australia in 2015</li>
-              <li>Participated in ASTAR SCRABBLE CHALLENGE INTERNATIONAL for three consecutive years with best ranking of 11th place</li>
-              <li>Participated in various national Scrabble competitions with best ranking of 2nd Runner Up</li>
-              <li>Organized the 1st MBSSKL Scrabble Open in 2016 during my stint as the President</li>
-          </ul>
-        </div>
-
-        <div class="mt-10 mb-3">
-          <strong class="text-3xl">MBSSKL Leaderonomics Club</strong><br>
-          <ul class="text-xl mt-1 list-disc list-inside pl-5">
-              <li>Represented the club to join a coding program (HTML, CSS and JavaScript) and build a simple website</li>
-              <li>The outcome was presented to the then President of USA, Barack Obama during the opening of The Malaysian Global Innovation and Creativity Centre (MaGIC) Cyberjaya in 2014 </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="py-2">
-        <h2 class="text-5xl font-bold mt-5 mb-10">Projects</h2>
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Random Name Picker</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="http://randomnamepicker.pythonanywhere.com/">http://randomnamepicker.pythonanywhere.com/</a></em></p><br>
-        </div>
-
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Blog</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="http://justinkhor.pythonanywhere.com/">http://justinkhor.pythonanywhere.com/</a></em></p><br>
-        </div>
-
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">AirBnb Clone</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="https://my-airbnb-clone.herokuapp.com/">https://my-airbnb-clone.herokuapp.com/</a></em></p><br>
-        </div>
-
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Quora Clone</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="http://justin-quora-clone.herokuapp.com/">http://justin-quora-clone.herokuapp.com/</a></em></p><br>
-        </div>
-
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Bitly Clone</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="https://sh0rt-ly.herokuapp.com/">https://sh0rt-ly.herokuapp.com/</a></em></p><br>
-        </div>
-
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">Auction House</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="https://liveauctionhouse.herokuapp.com/">https://liveauctionhouse.herokuapp.com/</a></em></p><br>
-        </div>
-
-        <div class="mt-2 mb-3">
-          <strong class="text-3xl">DeadStock</strong><br>
-          <p><em><a class="text-xl mt-1 text-blue-700 hover:text-blue-800" href="http://deadstock.herokuapp.com/">http://deadstock.herokuapp.com/</a></em></p><br>
-        </div>
-
       </div>
     </div>
   </body>
