@@ -1,28 +1,378 @@
-@tailwind base;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-@tailwind components;
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --border: #222;
+  --text: #e5e5e5;
+  --text-muted: #888;
+  --accent: #7c3aed;
+  --accent-hover: #a78bfa;
+}
 
-.section {
-  @apply w-full p-6;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0 2rem;
+}
+
+nav .nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul a {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+nav ul a:hover {
+  color: var(--text);
+}
+
+.nav-socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-socials a {
+  color: var(--text-muted);
+  display: flex;
+  transition: color 0.2s;
+}
+
+.nav-socials a:hover {
+  color: var(--text);
+}
+
+/* Sections */
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+section.hero {
+  border-top: none;
+}
+
+section:first-of-type {
+  padding-top: 7rem;
 }
 
 .section-title {
-  @apply w-48 mx-auto pt-6 border-b-2 border-orange-500 text-center text-2xl text-blue-700;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  display: inline-block;
 }
 
-.section-subtitle {
-  @apply p-2 text-center text-lg text-gray-700;
+/* Hero */
+.hero {
+  padding-top: 7rem;
+  padding-bottom: 0;
 }
 
-@tailwind utilities;
-
-.-skewx-20 {
-  transform: skewX(-20deg);
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
 }
 
-.rotate-45 {
-  transform: rotate(45deg);
+.hero .tagline {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
 }
-.-rotate-45 {
-  transform: rotate(-45deg);
+
+.hero .subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Experience */
+.role {
+  border-left: 2px solid var(--border);
+  padding-left: 1.5rem;
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+.role::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.role-company {
+  color: var(--accent);
+}
+
+.role-dates {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.role ul {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.role ul li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.role ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--border);
+  font-weight: 600;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.skill-card h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Education */
+.edu-item {
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--border);
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.edu-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.edu-item .school {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.edu-item .detail {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Notable */
+.notable-list {
+  list-style: none;
+}
+
+.notable-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.notable-list li::before {
+  content: "\2726";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  nav .nav-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.75rem 0;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    gap: 0.75rem;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul a {
+    font-size: 0.7rem;
+  }
+
+  .nav-socials {
+    gap: 0.75rem;
+  }
+
+  .role-header {
+    flex-direction: column;
+  }
+
+  .edu-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  section {
+    padding: 2rem 1.25rem 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 6rem;
+  }
+
+  section:first-of-type {
+    padding-top: 6rem;
+  }
 }
